@@ -29,12 +29,14 @@ body {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    
 }
 
 .container {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
+
 }
 
 .container-titulo {
@@ -169,4 +171,32 @@ body {
     text-align: center;
     color: var(--cinza-secundario);
     font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        background-image: none;
+    }
+
+    .container-imagem {
+        width: 50vw;
+    }
+
+    .container-caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario-imagem {
+        width: 50vw;
+    }
+
+    .dispositivos-lista {
+        display: block;
+    }
 }
